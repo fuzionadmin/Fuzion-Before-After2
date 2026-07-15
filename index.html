@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Fuzion Before & After Editor</title>
+<link rel='stylesheet' href='style.css'>
+<script defer src='script.js'></script>
+</head>
+<body>
+<header class="toolbar">
+<button id="uploadLeftBtn">Upload Before</button>
+<button id="uploadRightBtn">Upload After</button>
+<button id="editModeBtn">Edit Mode</button>
+<button id="downloadBtn">Download PNG</button>
+</header>
+
+<input type="file" id="leftInput" accept="image/*" hidden>
+<input type="file" id="rightInput" accept="image/*" hidden>
+
+<main class="editor">
+<div id="poster">
+<img src="template.jpeg" id="template" alt="Template">
+<div id="leftSlot" class="image-slot"></div>
+<div id="rightSlot" class="image-slot"></div>
+</div>
+</main>
+
+<footer>
+<p>Fuzion GitHub Pages Poster Editor</p>
+</footer>
+</body>
+</html>
